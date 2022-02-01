@@ -24,3 +24,17 @@ const testArray2 = ['banana', 'apple', 'kiwi', 'pear', 'orange']
 
 console.log(moving_partition(testArray1))
 console.log(moving_partition(testArray2))
+
+
+//Notes
+/*
+Array.slice(start,end) 
+.slice() always returns the second half of the array after slicing it, as a new array
+By using map, I iterate over the array and for each element I return an array with the result of calling slice twice 
+Each iteration returns an array containing two arrays
+ - .slice(0,i) - Slices the array from the start up to that iterations index
+ - .slice(i) - Slices the array from the current index until the last elemtent
+
+ Calling .slice(1) on the resulting array from map ensures that the list is n-1 elements and the first iteration
+ where .slice(0,0) would be called ( producing an empty array), is removed.
+ */
