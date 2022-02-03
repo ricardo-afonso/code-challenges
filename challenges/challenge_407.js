@@ -1,5 +1,5 @@
 /*
-https://github.com/beginner-codes/challenges/blob/main/weekday/challenge_406.md
+https://github.com/beginner-codes/challenges/blob/main/weekday/challenge_407.md
 
 
 Create a function that sums the total number of digits between two numbers, inclusive. For example, between the numbers 19 and 22 we have:
@@ -17,24 +17,7 @@ Examples
 //Solution
 
 let sum_digits = (a,b) =>  Array((b>a? b-a+1:a-b+1)).fill().map((_,i) => (b>a? a:b)+i).map(i=> i.toString().split('').map(Number).reduce((d,f)=>d+f)).reduce((g,h)=>g+h)
-/*
-let sum_digits = (a,b) =>  
-  Array((b>a? b-a+1:a-b+1))
-    .fill()
-    .map((_, idx) => 
-      (b>a? a:b) + idx
-    )
-    .map(i=> 
-      i.toString()
-      .split('')
-      .map(Number)
-      .reduce((d,f)=>
-        d+f)
-      )
-      .reduce((g,h)=>g+h)
-*/
 
-//Testing
 
 //Testing
 describe('Challenge 407 - Sum Digits', () => {
@@ -49,12 +32,6 @@ describe('Challenge 407 - Sum Digits', () => {
   })
 })
 
-
-// console.log(sum_digits(10,14)) 
-// //15
-
-// console.log(sum_digits(14,10))
-//15
 
 //Notes
 /*
