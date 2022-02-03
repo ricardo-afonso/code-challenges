@@ -15,7 +15,7 @@ happy_year(2021) ➞ 2031
 
 //Solution
 
-let happy_year = i => new Set((++i).toString().split('')).size === i.toString().split('').length ? i : happy_year(i++)
+let happy_year = i => new Set((++i).toString().split('')).size === `${i}`.length ? i : happy(i++)
 
 
 //Testing
@@ -41,7 +41,7 @@ i.toString().split() creates an array with all the digits of the number in strin
 
 new Set(..).size returns how many elements it has ( similar to .length)
 
-i.toString().split('').length returns the length of the original digit.
+`${i}`.length returns the length of the original digit while inherently converting it to a string
 
 If they are the same, it means the set has only unique values and the value can be returned
 
