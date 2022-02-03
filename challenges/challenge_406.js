@@ -19,11 +19,28 @@ const moving_partition = a => a.map((e,i,a)=> ([a.slice(0,i),a.slice(i)])).slice
 
 
 //Testing
-const testArray1 = [1,2,3,4,5]
-const testArray2 = ['banana', 'apple', 'kiwi', 'pear', 'orange']
+describe('Challenge 406 - Moving Partition', () => {
+    const testArray1 = [-1, -1, -1, -1]
+    const testArray2 = ['banana', 'apple', 'kiwi', 'pear', 'orange']
+    const testArray3 = [1, 2, 3, 4, 5]
 
-console.log(moving_partition(testArray1))
-console.log(moving_partition(testArray2))
+    const testArray1Result = [[[-1], [-1, -1, -1]], [[-1, -1], [-1, -1]], [[-1, -1, -1], [-1]]]
+    const testArray2Result = [[['banana'],['apple','kiwi','pear','orange']],[['banana','apple'],['kiwi','pear','orange']],[['banana','apple','kiwi'],['pear','orange']],[['banana','apple','kiwi','pear'],['orange']]]
+    const testArray3Result = [[[1], [2, 3, 4, 5]], [[1, 2], [3, 4, 5]], [[1, 2, 3], [4, 5]], [[1, 2, 3, 4], [5]]]
+
+    test('Test array 1', () => {
+      expect(moving_partition(testArray1)).toEqual(testArray1Result)
+    })
+    test('Test array 2', () => {
+        expect(moving_partition(testArray2)).toEqual(testArray2Result)
+    })
+    test('Test array 3', () => {
+    expect(moving_partition(testArray3)).toEqual(testArray3Result)
+    })
+    test('Test empty array', () => {
+      expect(moving_partition([])).toEqual([])
+    })
+  })
 
 
 //Notes
