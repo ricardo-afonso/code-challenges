@@ -17,7 +17,7 @@ Examples
 //Solution
 
 let sum_digits = (a,b) =>  Array((b>a? b-a+1:a-b+1)).fill().map((_,i) => (b>a? a:b)+i).map(i=> i.toString().split('').map(Number).reduce((d,f)=>d+f)).reduce((g,h)=>g+h)
-
+/*
 let sum_digits = (a,b) =>  
   Array((b>a? b-a+1:a-b+1))
     .fill()
@@ -32,14 +32,28 @@ let sum_digits = (a,b) =>
         d+f)
       )
       .reduce((g,h)=>g+h)
-
+*/
 
 //Testing
 
-console.log(sum_digits(10,14)) 
-//15
+//Testing
+describe('Challenge 407 - Sum Digits', () => {
+  test('[10,14] -> 15', () => {
+    expect(sum_digits(10,14)).toBe(15)
+  })
+  test('[14,10] -> 15', () => {
+    expect(sum_digits(10,14)).toBe(15)
+  })
+  test('[1,2] -> 3', () => {
+    expect(sum_digits(1,2)).toBe(3)
+  })
+})
 
-console.log(sum_digits(14,10))
+
+// console.log(sum_digits(10,14)) 
+// //15
+
+// console.log(sum_digits(14,10))
 //15
 
 //Notes
