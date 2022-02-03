@@ -4,7 +4,10 @@
   "description": "Collection of code challenges",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
+  },
+  "jest": {
+    "testMatch" : [ "**/challenges/**/challenge*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)" ]
   },
   "repository": {
     "type": "git",
