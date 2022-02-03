@@ -1,4 +1,6 @@
 /*
+https://github.com/beginner-codes/challenges/blob/main/weekday/challenge_408.md
+
 A Happy Year is any year with only distinct digits. Create a function that takes an integer year and returns the next happy year.
 
  Examples
@@ -29,11 +31,6 @@ describe('Challenge 408 - Happy year', () => {
   })
 })
 
-// console.log(happy_year(1990))
-//2013
-
-// console.log(happy_year(2021))
-//2031
 
 //Notes
 /*
