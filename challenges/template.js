@@ -15,7 +15,7 @@ let fn = () => {}
 
 //Testing
 describe('Challenge 000', () => {
-  it('runs', () => {
+  test('runs', () => {
     expect().toBe()
   })
 })
