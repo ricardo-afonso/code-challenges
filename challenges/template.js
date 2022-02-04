@@ -4,9 +4,6 @@ Challenge Description
 
 */
 
-const { expect } = require("@jest/globals");
-const { describe } = require("yargs");
-
 
 //Solution
 
