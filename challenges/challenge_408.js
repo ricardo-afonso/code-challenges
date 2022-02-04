@@ -15,7 +15,7 @@ happy_year(2021) ➞ 2031
 
 //Solution
 
-let happy_year = i => new Set((++i).toString().split('')).size === `${i}`.length ? i : happy(i++)
+let happy_year = i => new Set((++i).toString().split('')).size === `${i}`.length ? i : happy_year(i++)
 
 
 //Testing
