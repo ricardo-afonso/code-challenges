@@ -56,7 +56,25 @@ An empty list should return an empty list: []
  - Create a function that accepts a string and returns `True` if it's in the format of a proper phone number and `False` if it's not. Assume any number between 0-9 (in the appropriate spots) will produce a valid phone number.
 
  - This is what a valid phone number looks like: `(123) 456-7890`
- 
+ ---
+ [413 - Phone number](challenge_413.js)
+
+ - When coloring a striped pattern, you may start by coloring each square sequentially, meaning you spend time needing to switch coloring pencils.
+
+ - Create a function where given a list of colors, return how long it takes to color the whole pattern. Note the following times:
+
+- It takes 1 second to switch between pencils.
+- It takes 2 seconds to color a square.
+
+See the example below for clarification.
+```js
+color_pattern_times(["Red", "Blue", "Red", "Blue", "Red"]) ➞ 14
+// There are 5 colors so it takes 2 seconds to color each one (2 x 5 = 10).
+// You need to switch the pencils 4 times and it takes 1 second to switch (1 x 4 = 4).
+// 10 + 4 = 14
+ ```
+
+
 
 
 
