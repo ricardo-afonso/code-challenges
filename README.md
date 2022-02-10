@@ -2,7 +2,7 @@
 
 Daily code challenge for https://github.com/beginner-codes/challenges/tree/main/weekday
 
-
+Check every if every solution is passing with `npm test`
 &nbsp;
 
 ---
@@ -45,4 +45,10 @@ An empty list should return an empty list: []
   X = d1^1 + d2^2 + ... + dN^N
   ```
 ---
+[411 - Full House](challenge_410.js)
+
+ - Create a function that determines whether a player is holding a Full House in their hand. A hand is represented as a list of 5 cards. A full house is defined as a pair of cards and a three-of-a-kind.
+
+ - To illustrate: `["A", "A", "A", "K", "K"]` would be a Full House, since the player holds 3 aces and a pair of kings.
+
 
