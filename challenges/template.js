@@ -1,6 +1,7 @@
 /*
 
-Challenge Description
+https://github.com/beginner-codes/challenges/blob/main/weekday/challenge_###.md
+
 
 */
 
