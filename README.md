@@ -45,10 +45,18 @@ An empty list should return an empty list: []
   X = d1^1 + d2^2 + ... + dN^N
   ```
 ---
-[411 - Full House](challenge_410.js)
+[411 - Full House](challenge_411.js)
 
  - Create a function that determines whether a player is holding a Full House in their hand. A hand is represented as a list of 5 cards. A full house is defined as a pair of cards and a three-of-a-kind.
 
  - To illustrate: `["A", "A", "A", "K", "K"]` would be a Full House, since the player holds 3 aces and a pair of kings.
+ ---
+ [412 - Phone number](challenge_412.js)
+
+ - Create a function that accepts a string and returns `True` if it's in the format of a proper phone number and `False` if it's not. Assume any number between 0-9 (in the appropriate spots) will produce a valid phone number.
+
+ - This is what a valid phone number looks like: `(123) 456-7890`
+ 
+
 
 
