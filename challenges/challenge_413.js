@@ -46,6 +46,8 @@ let colorPatternTimes = array => {
   // build a new array with the results. Each switch takes 1 second.
   let diffElems = array.map((el, ind, arr) => {
     let compare = arr[ind] !== arr[ind-1]
+    // using the unary  operator '+', the array will be converted into numbers 
+    // true - 1 | false 0 -> this represents the time it takes to switch pencils
     return +compare
   })
   // Slice the first element as it shouldn't count as a color switch
