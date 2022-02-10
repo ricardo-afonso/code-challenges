@@ -40,7 +40,7 @@ describe('Challenge 411 - Full house', () => {
 
 
 // define a fn that takes an array
-const full_house = array => {
+const fullHouse = array => {
   // Defining a new set from the array, which will remove all duplicates
   let arrSet = new Set(array)
   // check the set size, it should be 2 because on a full house there are only 2 different cards
