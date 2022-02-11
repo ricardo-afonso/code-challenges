@@ -73,7 +73,24 @@ color_pattern_times(["Red", "Blue", "Red", "Blue", "Red"]) ➞ 14
 // You need to switch the pencils 4 times and it takes 1 second to switch (1 x 4 = 4).
 // 10 + 4 = 14
  ```
+---
+ [414 - Spelling Bee](challenge_414.js)
 
+ - Given a sentence spelling out a word, return True if the spelled letters match the word at the end of the string.
+
+Examples
+```js
+validate_spelling("C. Y. T. O. P. L. A. S. M. Cytoplasm?") ➞ True
+
+validate_spelling("P. H. A. R. A. O. H. Pharaoh!") ➞ True
+
+validate_spelling("H. A. N. K. E. R. C. H. E. I. F. Handkerchief.") ➞ False
+```
+
+Notes
+
+- The word at the end is always spelled correctly.
+- Spelled words will always end in punctuation (but ignore all punctuation).
 
 
 
