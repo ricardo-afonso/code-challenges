@@ -45,7 +45,7 @@ describe('Challenge 415 - Letter Distance', () => {
 const letterDistance = (firstWord, secondWord) => {
   // create a array from both words
   let wordsInArray = [firstWord, secondWord]
-  // find the smallest of two words. Compare length and only save the smallest on the accumulator of reduce
+  // find the smallest of two words. Compare length and only return the smallest to the accumulator
   let smallestWord = wordsInArray.reduce((a,b)=> a.length <= b.length ? a : b)
   let smallestLength = smallestWord.length
   //To keep the code in one line, instead of a for loop using the smallest length, I created
